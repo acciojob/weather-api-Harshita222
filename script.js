@@ -6,5 +6,6 @@ btn.addEventListener("click",function(){
 	.then(data=>{
 	 const weatherDiv = document.getElementById("weatherData");
 		weatherDiv.innerHTML =`Current weather in London: ${data.weather[0].main}`
+		)
 	});
 }
