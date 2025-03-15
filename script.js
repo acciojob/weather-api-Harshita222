@@ -1,8 +1,7 @@
 //your JS code here. If required.
 const btn = document.querySelector("button")
 btn.addEventListener("click",function(){
- fetch('https://api.openweathermap.org/data/2.5/weather?q=London&appid=678813de961756d6eb594f200e842b6f
-')	
+ fetch("https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=e467712b257e418838be97cc881a71de")	
 	.then(response=>response.json())
 	.then(data=>{
 	 const weatherDiv = document.getElementById("weatherData");
